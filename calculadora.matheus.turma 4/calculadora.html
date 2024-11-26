@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="icon" href="calculadora-icon.jpg" type="image/x-icon">
+    <title>calculadora</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="inicio">
+            <img src="40ba3602-351a-4325-af71-1b82b0386360.jpg" alt="" class="logos">
+            <h1>Calculadora do Matheus</h1>
+          
+            <p class="paragrafoUm">Bem vindo á nossa <b>Calculadora!</b> Aqui você pode fazer qualquer operação que quiser, desde adição até
+                porcentagem.</p>
+        </div>
+    </div>
+    
+
+
+    <div class="calculadora">
+        <input type="text" id="tela" disabled>
+        <div class="botao">
+            <button class="c" onclick="clearDisplay()">C</button>
+            <button class="buttCor" onclick="appendToDisplay('/')">/</button>
+            <button class="buttCor" onclick="appendToDisplay('*')">*</button>
+            <button class="buttCor" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="buttCor" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="buttCor" onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            
+            <button class="buttCor" onclick="appendToDisplay('%')">%</button>
+            <button class="btnZero" onclick="appendToDisplay('0')">0</button>
+            <button class="buttCor" onclick="calculate('=')">=</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="rodape">
+            &copy;
+            <img src="Logo Branca.png" alt="" class="logo-rodape">
+            <img  src="logo_proj_lucas01.png" alt="" class="logo-rodape">
+            <div class="textorodape">
+                <p class="p1">Feito por: Matheus Calebe</p>
+                <p class="p2">Gama</p>
+                <p class="p3">619999999</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById('tela').value += value; 
+        }
+
+        function clearDisplay() {
+            document.getElementById('tela').value = "";
+        }
+
+        function calculate() {
+            try {
+               const result = eval(document.getElementById("tela").value);
+               document.getElementById("tela").value = result;
+
+            } catch (error) {
+               alert("expressao invalida") ;
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

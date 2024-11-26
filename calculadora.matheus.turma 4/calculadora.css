@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    margin: 0;
+    text-align: center;
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min
+}
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+   
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.paragrafoUm{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400;
+    padding: 30px;
+    margin: -7px;
+    height: 1px;
+}
+
+.logos{
+    height: 30px;
+    margin: 0;
+    padding: 0px;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logos{
+    height: 100px;
+    margin-top: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+
+.calculadora{
+    background-color: rgb(0, 0, 0, 0.6);
+    padding: 30px 30px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.botao{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    justify-content: center;
+}
+
+button{
+    height: 50px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+.btnZero {
+    grid-column: span 3; /* Faz o botão "0" ocupar todas as 4 colunas */
+}
+
+.buttCor{
+    background-color: orange;
+   
+}
+.c{
+    background-color: brown;
+    color: white;
+}
+
+.gdf{
+    height: 100px;
+    width: auto;
+    margin: 0 10;
+    margin-left: 200;
+    padding: 0.5;
+}
+
+footer {
+    background-image: url(fundo-rodape.jpg);
+    padding: 1px 0;
+    font-size: 10px; /* Mantém o tamanho da fonte pequeno */
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: relative; /* O rodapé vai ficar no final da página */
+    margin-top: 12px; 
+}
+
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400;
+    padding: 30px;
+}
+
+.textorodape {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-rodape{
+    width: 100px;
+}
